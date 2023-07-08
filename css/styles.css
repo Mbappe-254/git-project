@@ -3,6 +3,7 @@ body{
   }
   h1,h2,h3 {
   font-family: "Lobster", cursive;
+  color: whitesmoke;
   }
   nav {
       padding: 30px;
@@ -15,8 +16,10 @@ body{
   }
   h2{
     margin-left: 0%;
-    background-color: aqua;
+    background-color: rgb(94, 38, 82);
+    color: aqua;
+  
   }
   h3{
-    background-color: crimson;
+    background-color: cadetblue;
   }

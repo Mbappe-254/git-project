@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
+    <!-- Additional CSS must be placed after Bootstrap CSS -->
+    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster|Open+Sans" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <title>homeboyz.com</title>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-inverse sticky-top navbar-dark">
+        <div class="container">
+            <a class="navbar-brand">Homeboyz
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nucampNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="nucampNavbar">
+                <ul class="nav navbar-nav transparent">
+                    <li class="dropdown "><a class="dropdown-toggle" data-toggle="dropdown" href="#">Home<span
+                                class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li class="nav-item"><a href="#">News</a></li>
+                            <li class="nav-item"><a href="#">About</a></li>
+                            <li class="nav-item"><a href="#">Tickets and Registration</a></li>
+                            <li class="nav-item"><a href="#">History</a></li>
+                            <li class="nav-item"><a href="#">Matches</a></li>
+                            <li class="nav-item"><a href="#">Club</a></li>
+                        </ul>
+                    </li>
+                    <li><a class="dropdown-toggle" data-toggle="dropdown" href="#">Registration<span
+                                class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#"><i class="fa fa-user"></i> Sign Up</a></li>
+                            <li><a href="#"><i class="fa fa-sign-in"></i> Login</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <form class="navbar-form navbar-left" action="/action_page.php">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search" name="search">
+                    </div>
+                    <button type="submit" class="btn btn-info">Submit</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <div class="container-fluid">
+        <div class="col mt-3">
+            <h2>Welcome to the official Homeboyz page</h2>
+        </div>
+        <div class="row">
+            <div class="col col-sm-4 mt-3 ml-3">
+                <img class="d-flex img-thumbnail" src="images/trophy.jpg.jpg" alt="trophy" height="400">
+            </div>
+            <div class="col col-sm-4 mt-3">
+                <video width="500" controls>
+                    <source src="images/VIDEO-2023-07-05-21-11-52.mp4"
+                        type="video/mp4">
+                </video>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+       <div class="vertical-center col col-sm-3  ml-20 mt-3"></div>
+        <h3>TRENDING - SEE MORE</h3>
+    </div>
+    </div>
+</body>
+<!-- jQuery must come first, then Popper.js, then the Bootstrap JavaScript plugins.-->
+<script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+<script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+<script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>

@@ -1,5 +1,6 @@
 body{
     font-family:sans-serif;
+    background-image:linear-gradient(to right,white,green,red);
   }
   h1,h2,h3 {
   font-family: "Lobster", cursive;
@@ -58,14 +59,14 @@ body{
 }
 
 .navbar a:hover, .subnav:hover .subnavbtn {
-  background-color:yellowgreen;
+  background-color: #04AA6D!important;
+  color: azure;
 }
-
 .subnav-content {
   display: none;
   position: absolute;
   left: 0;
-  background-color:goldenrod;
+  background-color:#5637DD;
   width: 100%;
   z-index: 1;
 }
@@ -111,4 +112,12 @@ body{
   left: 40%;
   margin-left: 3px;
   top: 0;
+}
+.content {
+  position: fixed;
+  bottom: 3;
+  background: rgba(0, 0, 0, 0.5);
+  color: #f1f1f1;
+  width: 100%;
+  padding: 20px;
 }

@@ -17,49 +17,47 @@
 
 <body>
     <header class="jumbotron jumbotron-fluid">
-        <div class="container">
+        <div class="container-fluid">
             <div class="row">
-                <div class="col-4 col-sm-3 col-md-2 align-self-center">
-                    <a href="index.html"><img src="images/team.png" class="img-fluid" />
-                </div></a>
+                <div class="col-4 col-sm-3 col-md-2 align-self-left">
+                    <a href="index.html"><img src="images/team.png" class="img-thumbnail" height="100" width="100"></a>
+                </div>
+                <!-- <div class="col-4 col-sm-3 align-self-left"> -->
+                <!-- <h1>Homeboyz</h1> -->
+                <!-- <h3>Next Generation Soccer</h3> -->
+                <!-- </div> -->
             </div>
-            <div class="col">
-                <h1>Homeboyz</h1>
-                <h3>Next Generation Soccer</h3>
-            </div>
-        </div>
         </div>
     </header>
 
     <nav class="navbar navbar-expand-sm sticky-top navbar-dark">
         <div class="container-fluid">
             <a class="navbar-brand" href="index.html"><img src="images/team.png" height="30" width="30"></a>
-
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#homeboyzNavbar">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nucampNavbar">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="homeboyzNavbar">
+            <div class="collapse navbar-collapse" id="nucampNavbar">
                 <div class=" col navbar-nav">
-                    <a href="index.html">Home</a>
+                    <a href="index.html"><i class="fa fa-home fa-lg"></i> Home</a>
                     <div class="subnav">
-                        <button class="subnavbtn ml-3">About <i class=" fa fa-caret-down"></i></button>
+                        <button class="subnavbtn"><a href="#"></a><i class="fa fa-info fa-lg"></i> About</button>
                         <div class="subnav-content">
-                            <a href="aboutHomeboyz.html">Team</a>
-                            <a href="aboutHomeboyz.html"></a>
-                        </div>
-                    </div>
-                    <div class="subnav">
-                        <button class="subnavbtn ">History and News<i class="fa fa-caret-down"></i></button>
-                        <div class="subnav-content">
-                            <a href="#bring">Latest Updates</a>
-                            <a href="#deliver">Fixture and Results</a>
-                            <a href="#package">Features</a>
-                            <a href="#express">More</a>
+                            <a href="#">Team</a>
 
                         </div>
                     </div>
                     <div class="subnav">
-                        <button class="subnavbtn">Tickets and Membership<i class="fa fa-caret-down"></i></button>
+                        <button class="subnavbtn"><i class="fa fa-book fa-lg"></i> History and News</button>
+                        <div class="subnav-content">
+                            <a href="#bring">Latest Updates</a>
+                            <a href="#deliver" data-target="#fixturesAndResults">Fixture and Results</a>
+                            <a href="#package">Features</a>
+                            <a href="#express">More</a>
+                        </div>
+                    </div>
+                    <div class="subnav">
+                        <button class="subnavbtn"><i class="fa fa-user-plus fa-lg"></i> Tickets and Membership<i
+                                class="fa fa-caret-down"></i></button>
                         <div class="subnav-content">
                             <div class="col-sm-3">
                                 <span class="navbar-text ml-auto">
@@ -84,20 +82,18 @@
                             </div>
                         </div>
                     </div>
-                    <a href="aboutHomeboyz.html">Club</a>
-                    <a href="socialMedia.html">Practice and Contact info</a>
-
+                    <a href="aboutHomeboyz.html"><i class="fa fa-futbol fa-lg">Club</i></a>
+                    <a href="socialMedia.html"><i class="fa fa-phone fa-lg"></i> Contact info</a>
                 </div>
                 <form class="navbar-form navbar-left" action="/action_page.php">
                     <div class="form-group">
                         <input type="text" class="form-control" placeholder="Search" name="search">
                     </div>
-                    <button type="submit" class="btn btn-success">Submit</button>
+                    <button type="submit" class="btn btn-primary">Submit</button>
                 </form>
             </div>
         </div>
     </nav>
-
     <div id="signUp" class="modal fade" role="dialog">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
@@ -201,33 +197,33 @@
         </div>
     </div>
 
-        <div class="row">
-            <div class="col-sm-4 col-md-3 ml-3">
-                <h2 class="text-sm-right">About Homeboyz</h2>
-                <p>Homeboyz was formed back in 2020 during the Pandermic. We started our league with individuals
-                    deciding that no player was better than the other. it was formed due to people having mutual friends
-                    and individuals having the passion to play soccer.soccer is a passion and its always a better way
-                    of socializing with individuals.</p>
-            </div>
-            <div class=" col col-sm-6">
-                <video class="d-block mt-3" width="600" controls>
-                    <source src="images/VIDEO-2023-07-05-21-33-03.mp4" type="video/mp4">
-                </video>
-                <div class="carousel-caption">
-                    <h3>Here is a video Recap</h3>
-                    <p class="d-none d-sm-block">It was a big game between Union and Homeboyz.</p>
-                </div>
+    <div class="row">
+        <div class="col-sm-4 col-md-3 ml-3">
+            <h2 class="text-sm-right">About Homeboyz</h2>
+            <p>Homeboyz was formed back in 2020 during the Pandermic. We started our league with individuals
+                deciding that no player was better than the other. it was formed due to people having mutual friends
+                and individuals having the passion to play soccer.soccer is a passion and its always a better way
+                of socializing with individuals.</p>
+        </div>
+        <div class=" col col-sm-6 video-container">
+            <video id="videoPlay" class="d-block mt-3" width="100%" controls>
+                <source src="images/VIDEO-2023-07-05-21-33-03.mp4" type="video/mp4">
+            </video>
+            <div class="carousel-caption">
+                <h3 id="caption">Here is a video Recap</h3>
+                <p class="d-none d-sm-block">It was a big game between Union and Homeboyz.</p>
             </div>
         </div>
-        <div class="row">
-            <div class="col-sm-6 ml-3">
-                <h1>Team Captain</h1>
-                <p>Albert Okiro</p>
-                <p>We as a team we are motivated and want to achieve more as a team and we want our team to be
-                    the best and are always looking forward to a great win this weekend. let's keep our heads up
-                    and think how we improve everyday as a Team. Thank YOU! </p>
-            </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-6 ml-3">
+            <h1>Team Captain</h1>
+            <p>Albert Okiro</p>
+            <p>We as a team we are motivated and want to achieve more as a team and we want our team to be
+                the best and are always looking forward to a great win this weekend. let's keep our heads up
+                and think how we improve everyday as a Team. Thank YOU! </p>
         </div>
+    </div>
 
     <footer class="site-footer">
         <div class="container">
@@ -264,6 +260,7 @@
     <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="js/scripts.js"> </script>
 
 
 

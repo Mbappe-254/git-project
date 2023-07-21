@@ -18,17 +18,16 @@
 
 <body>
     <header class="jumbotron jumbotron-fluid">
-        <div class="container">
+        <div class="container-fluid">
             <div class="row">
                 <div class="col-4 col-sm-3 col-md-2 align-self-left">
-                    <a href="index.html"></a> <img src="images/team.png" class="img-thumbnail">
-                </div></a>
+                    <a href="#"><img src="images/team.png" class="img-thumbnail"height="100" width="100"></a>
+                </div>
+            <!-- <div class="col-4 col-sm-3 align-self-left"> -->
+                <!-- <h1>Homeboyz</h1> -->
+                <!-- <h3>Next Generation Soccer</h3> -->
+            <!-- </div> -->
             </div>
-            <div class="col">
-                <h1>Homeboyz</h1>
-                <h3>Next Generation Soccer</h3>
-            </div>
-        </div>
         </div>
     </header>
     <nav class="navbar navbar-expand-sm sticky-top navbar-dark">
@@ -39,16 +38,17 @@
             </button>
             <div class="collapse navbar-collapse" id="nucampNavbar">
                 <div class=" col navbar-nav">
-                    <a href="#home">Home</a>
+                    <a href="#"><i class="fa fa-home fa-lg"></i> Home</a>
                     <div class="subnav">
-                        <button class="subnavbtn">About <i class=" fa fa-caret-down"></i></button>
+                        <button class="subnavbtn"><i class="fa fa-info fa-lg"></i> About</button>
                         <div class="subnav-content">
                             <a href="aboutHomeboyz.html">Team</a>
                             <a href="aboutHomeboyz.html"></a>
                         </div>
                     </div>
                     <div class="subnav">
-                        <button class="subnavbtn">History and News<i class="fa fa-caret-down"></i></button>
+                        <button class="subnavbtn"><i
+                            class="fa fa-book fa-lg"></i> History and News</button>
                         <div class="subnav-content">
                             <a href="#bring">Latest Updates</a>
                             <a href="#deliver" data-target="#fixturesAndResults">Fixture and Results</a>
@@ -57,9 +57,10 @@
                         </div>
                     </div>
                     <div class="subnav">
-                        <button class="subnavbtn">Tickets and Membership<i class="fa fa-caret-down"></i></button>
+                        <button class="subnavbtn"><i
+                            class="fa fa-user-plus fa-lg"></i> Tickets and Membership<i class="fa fa-caret-down"></i></button>
                         <div class="subnav-content">
-                            <div class="col-sm-3">
+                            <div class="col">
                                 <span class="navbar-text ml-auto">
                                     <a role="button" data-toggle="modal" data-target="#signUp">
                                         <i class="fa fa-user"></i> Sign Up</a>
@@ -82,8 +83,10 @@
                             </div>
                         </div>
                     </div>
-                    <a href="aboutHomeboyz.html">Club</a>
-                    <a href="socialMedia.html">Practice and Contact info</a>
+                    <a href="aboutHomeboyz.html"><i
+                        class="fa fa-futbol fa-lg">Club</i></a>
+                    <a href="socialMedia.html"><i
+                        class="fa fa-phone fa-lg"></i> Contact info</a>
                 </div>
                 <form class="navbar-form navbar-left" action="/action_page.php">
                     <div class="form-group">
@@ -328,7 +331,7 @@
     <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-
+    <script src="js/scripts.js"> </script>
 </body>
 
 </html>

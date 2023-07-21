@@ -91,9 +91,8 @@ body{
 }
 .video-container:hover {
   .carousel-caption{
-    visibility: hidden;
+    visibility:hidden;
   }
-  
 }
 .carousel{
   border:solid #5637DD;

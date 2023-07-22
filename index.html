@@ -71,7 +71,7 @@
                                     </a>
                                 </span>
                                 <span class="navbar-text ml-auto">
-                                    <a role="button" id="#TicketsToGames">
+                                    <a role="button" data-toggle="modal" data-target="#ticketsGames">
                                         <i class="fa fa-ticket"></i>Game Tickets
                                     </a>
                                 </span>
@@ -194,6 +194,41 @@
         </div>
     </div>
 
+    <div id="ticketsGames" class="modal fade" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 class="modal-title">Buy Tickets here </h3>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <div class="container-fluid">
+                        <form>
+                            <div class="form-row">
+                            <div class="form-group col-12">
+                                <label for="psw"><i class="fa fa-shopping-cart fa-lg"></i> Tickets, $23 per person</label>
+                                <input type="number" class="form-control" id="psw" placeholder="How many Tickets would you like?">
+                            </div>
+                         </div>
+                            <div class="form-row">
+                                <div class="form-group col-12">
+                                    <label class="sr-only" for="loginEmail">Email address</label>
+                                    <input type="email" class="form-control form-control-sm" id="loginEmail"
+                                        placeholder="Enter email">
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <button type="button" class="btn btn-secondary btn-sm ml-auto"
+                                    data-dismiss="modal">Cancel</button>
+                                <button type="submit" class="btn btn-success btn-sm ml-1">Pay Now</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <div class="container-fluid">
         <div class="col mt-5">
             <h3>Welcome to the Homeboyz page</h3>
@@ -207,7 +242,7 @@
                 <img class="d-flex img-thumbnail" src="images/PHOTO-2023-05-07-15-50-27.jpg" alt="trophy" width="600">
             </div>
             <div class="col col-sm-4 mt-3">
-                <video width="600" controls>
+                <video width="500" controls>
                     <source src="images/VIDEO-2023-07-05-21-11-52.mp4" type="video/mp4">
                 </video>
 
@@ -241,7 +276,7 @@
                     <thead>
                         <tr class="bg-info text-light">
                             <th>#Team</th>
-                            <th>W-L-T</th>
+                            <th>W-L-D</th>
                             <th>GD</th>
                             <th>Points</th>
                         </tr>
@@ -305,17 +340,17 @@
                         <li><a href="index.html">Home</a></li>
                         <li><a href="aboutHomeboyz.html">About</a></li>
                         <li><a href="aboutHomeboyz.html">History and News</a></li>
-                        <li><a href="socialMedia.html">Tickets and Membership</a></li>
+                        <li><a href="#" role="button" data-toggle="modal" data-target="#ticketsGames">Tickets and Membership</a></li>
                         <li><a href="socialMedia.html">Club</a></li>
                         <li><a href="socialMedia.html">Contact info</a></li>
                     </ul>
                 </div>
                 <div class="col col-sm-5 text-center">
                     <h5>Social</h5>
-                    <a class="btn btn-social icon btn-instagram" href="http://instagram.com/"><i
-                            class="fa fa-instagram fa-lg"></i></a>
-                    <a class="btn btn-social icon btn-facebook" href="http://facebook.com/"><i
-                            class="fa fa-facebook fa-lg"></i></a>
+                    <a class="btn btn-social icon btn-instagram" href="https://www.instagram.com/home_boyzfc/"><i
+                        class="fa fa-instagram"></i></a>
+                <a class="btn btn-social icon btn-facebook" href="https://www.facebook.com/fchomeboyz"><i
+                        class="fa fa-facebook fa-lg"></i></a>
                     <a class="btn btn-social icon btn-twitter" href="http://twitter.com/"><i
                             class="fa fa-twitter fa-lg"></i></a>
                     <a class="btn btn-social icon btn-google" href="http://youtube.com/"><i

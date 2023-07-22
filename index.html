@@ -21,12 +21,12 @@
         <div class="container-fluid">
             <div class="row">
                 <div class="col-4 col-sm-3 col-md-2 align-self-left">
-                    <a href="#"><img src="images/team.png" class="img-thumbnail"height="100" width="100"></a>
+                    <a href="#"><img src="images/team.png" class="img-thumbnail" height="100" width="100"></a>
                 </div>
-            <!-- <div class="col-4 col-sm-3 align-self-left"> -->
+                <!-- <div class="col-4 col-sm-3 align-self-left"> -->
                 <!-- <h1>Homeboyz</h1> -->
                 <!-- <h3>Next Generation Soccer</h3> -->
-            <!-- </div> -->
+                <!-- </div> -->
             </div>
         </div>
     </header>
@@ -47,8 +47,7 @@
                         </div>
                     </div>
                     <div class="subnav">
-                        <button class="subnavbtn"><i
-                            class="fa fa-book fa-lg"></i> History and News</button>
+                        <button class="subnavbtn"><i class="fa fa-book fa-lg"></i> History and News</button>
                         <div class="subnav-content">
                             <a href="#" data-toggle="_blank" data-target="#resultsAndTable" data>Latest Updates</a>
                             <a href="#deliver" data-target="#fixturesAndResults">Fixture and Results</a>
@@ -57,8 +56,8 @@
                         </div>
                     </div>
                     <div class="subnav">
-                        <button class="subnavbtn"><i
-                            class="fa fa-user-plus fa-lg"></i> Tickets and Membership<i class="fa fa-caret-down"></i></button>
+                        <button class="subnavbtn"><i class="fa fa-user-plus fa-lg"></i> Tickets and Membership<i
+                                class="fa fa-caret-down"></i></button>
                         <div class="subnav-content">
                             <div class="col">
                                 <span class="navbar-text ml-auto">
@@ -76,17 +75,15 @@
                                     </a>
                                 </span>
                                 <span class="navbar-text ml-auto">
-                                    <a role="button" id="volunteering">
+                                    <a role="button" data-toggle="modal" data-target="#peopleVolunteers">
                                         <i class="fa form-check-label "></i>Volunteers
                                     </a>
                                 </span>
                             </div>
                         </div>
                     </div>
-                    <a href="aboutHomeboyz.html"><i
-                        class="fa fa-futbol fa-lg">Club</i></a>
-                    <a href="socialMedia.html"><i
-                        class="fa fa-phone fa-lg"></i> Contact info</a>
+                    <a href="aboutHomeboyz.html"><i class="fa fa-futbol fa-lg">Club</i></a>
+                    <a href="socialMedia.html"><i class="fa fa-phone fa-lg"></i> Contact info</a>
                 </div>
                 <form class="navbar-form navbar-left" action="/action_page.php">
                     <div class="form-group">
@@ -205,11 +202,13 @@
                     <div class="container-fluid">
                         <form>
                             <div class="form-row">
-                            <div class="form-group col-12">
-                                <label for="psw"><i class="fa fa-shopping-cart fa-lg"></i> Tickets, $23 per person</label>
-                                <input type="number" class="form-control" id="psw" placeholder="How many Tickets would you like?">
+                                <div class="form-group col-12">
+                                    <label for="psw"><i class="fa fa-shopping-cart fa-lg"></i> Tickets, $23 per
+                                        person</label>
+                                    <input type="number" class="form-control" id="psw"
+                                        placeholder="How many Tickets would you like?">
+                                </div>
                             </div>
-                         </div>
                             <div class="form-row">
                                 <div class="form-group col-12">
                                     <label class="sr-only" for="loginEmail">Email address</label>
@@ -228,6 +227,52 @@
             </div>
         </div>
     </div>
+    <div id="peopleVolunteers" class="modal fade" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 class="modal-title"> Fill in this Form</h3>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <div class="container-fluid">
+                        <form>
+                            <div class="form-row">
+                                <div class="form-group col-12">
+                                    <p class="text-primary">Enter your phone number<label class="sr-only"
+                                            for="phone number">Phone number</label></p>
+                                    <input type="email" class="form-control form-control-sm" id="loginEmail"
+                                        placeholder="#(###)-###-####">
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group col-12">
+                                    <p class="text-primary">Enter your email address<label class="sr-only"
+                                            for="loginEmail">Email address</label></p>
+                                    <input type="email" class="form-control form-control-sm" id="loginEmail"
+                                        placeholder="Enter email">
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group col-12">
+                                    <p class="text-primary">Enter your Shipping Address <label class="sr-only"
+                                            for="mailingAddress">Shipping Address</label></p>
+                                    <input type="email" class="form-control form-control-sm" id="loginEmail"
+                                        placeholder="Enter Mailing Address">
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <button type="button" class="btn btn-secondary btn-sm ml-auto"
+                                    data-dismiss="modal">Cancel</button>
+                                <button type="submit" class="btn btn-success btn-sm ml-1">Submit</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
 
     <div class="container-fluid">
         <div class="col mt-5">
@@ -340,7 +385,8 @@
                         <li><a href="index.html">Home</a></li>
                         <li><a href="aboutHomeboyz.html">About</a></li>
                         <li><a href="aboutHomeboyz.html">History and News</a></li>
-                        <li><a href="#" role="button" data-toggle="modal" data-target="#ticketsGames">Tickets and Membership</a></li>
+                        <li><a href="#" role="button" data-toggle="modal" data-target="#ticketsGames">Tickets and
+                                Membership</a></li>
                         <li><a href="socialMedia.html">Club</a></li>
                         <li><a href="socialMedia.html">Contact info</a></li>
                     </ul>
@@ -348,9 +394,9 @@
                 <div class="col col-sm-5 text-center">
                     <h5>Social</h5>
                     <a class="btn btn-social icon btn-instagram" href="https://www.instagram.com/home_boyzfc/"><i
-                        class="fa fa-instagram"></i></a>
-                <a class="btn btn-social icon btn-facebook" href="https://www.facebook.com/fchomeboyz"><i
-                        class="fa fa-facebook fa-lg"></i></a>
+                            class="fa fa-instagram"></i></a>
+                    <a class="btn btn-social icon btn-facebook" href="https://www.facebook.com/fchomeboyz"><i
+                            class="fa fa-facebook fa-lg"></i></a>
                     <a class="btn btn-social icon btn-twitter" href="http://twitter.com/"><i
                             class="fa fa-twitter fa-lg"></i></a>
                     <a class="btn btn-social icon btn-google" href="http://youtube.com/"><i

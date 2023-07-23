@@ -1,0 +1,148 @@
+$color-light:rgb(226, 43, 134);
+$color-green:rgb(81, 129, 9);
+$color-aq:aqua;
+$color-dark:#60106B;
+$color-green:green;
+$color-red:red;
+$color-purpleLight:#5637DD;
+$color-blue:#3046C5;
+$color-white:white;
+$color-black:black;
+$color-grey:#333;
+$color-blackMix: rgba(0,0,0,0.5);
+
+$body-font: "Open Sans", sans-serif;
+$header-font: "Lobster", cursive;
+
+
+
+body{
+      font-family: $body-font;
+      background-image:linear-gradient(to right,$color-white,$color-aq,$color-light);
+    } 
+
+    h1,h2,h3 {
+    font-family: $header-font;
+    color:$color-light
+    }
+    nav {
+        padding: 30px;
+        background-image:linear-gradient(to right,$color-black,$color-dark,$color-green);
+        color:$color-green
+    }
+    .navbar{
+      margin-top: 0px;
+    }
+    h2{
+      margin-left: 0%;
+      color: $color-green;
+    
+    } 
+    h5{
+      color:$color-dark;
+      
+    }
+  .jumbotron {
+    margin:0px;
+    padding: 30px;
+    background-image: linear-gradient(to right,$color-purpleLight, $color-blue,$color-dark);
+    color: $color-white;
+  }
+  .navbar {
+    background-color: $color-grey; 
+  }
+  
+  .navbar a {
+    float: left;
+    font-size: 16px;
+    color: $color-white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  .subnav {
+    float: left;
+    overflow: hidden;
+  }
+  
+  .subnav .subnavbtn {
+    font-size: 16px;  
+    border: none;
+    outline: none;
+    color: $color-white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+  }
+  
+  .navbar a:hover, .subnav:hover .subnavbtn {
+    background-color: #04AA6D!important;
+    color: azure;
+  }
+  .subnav-content {
+    display: none;
+    position: absolute;
+    left: 0;
+    background-color:$color-purpleLight;
+    width: 100%;
+    z-index: 1;
+  }
+  
+  .subnav-content a {
+    float: left;
+    color: $color-white;
+    text-decoration: none;
+  }
+  
+  .subnav-content a:hover {
+    background-color: #eee;
+    color:$color-black;
+  }
+  
+  .subnav:hover .subnav-content {
+    display: block;
+  }
+  .carousel-caption{
+    background-color: $color-blackMix
+  }
+  .video-container:hover {
+    .carousel-caption{
+      visibility:hidden;
+    }
+  }
+  .carousel{
+    border:solid $color-purpleLight;
+  }
+  .team-images img{
+    max-height: 400px;
+  }
+  .site-footer {
+    background-image: linear-gradient($color-aq, $color-white);
+    padding: 20px;
+  }
+  .footer{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+  }
+  .vertical-line {
+    border-left: 1px solid $color-black;
+    height: 30px;
+    position: absolute;
+    left: 40%;
+    margin-left: 3px;
+    top: 0;
+  }
+  .content {
+    position: absolute;
+    bottom: 3;
+    background: $color-blackMix;
+    color: #f1f1f1;
+    width: 10%;
+    padding: 5px;
+  }
+  
